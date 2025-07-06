@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="board-page">
+    <div id="app">
+        <!-- 게시글 목록 뷰 -->
+        <div id="board-list-view" class="view active">
+            <header class="board-header">
+                <div class="header-container">
+                    <h1 class="board-title">게시판</h1>
+                    <nav class="board-nav">
+                        <a href="login.html" id="login-logout-btn">로그인</a>
+                        <a id="withdrawal-btn">회원탈퇴</a>
+                        <a href="signup.html" id="signup-link">회원가입</a>
+                        <button id="new-post-btn" onclick="location.href='write.html'">새 글 작성</button>
+                    </nav>
+                </div>
+            </header>
+            <main class="board-content">
+                <div class="container">
+                    <p class=".view.active" id="status-message">로딩 중</p>
+                    <ul class="post-list">
+                        <!-- JavaScript로 동적 생성 -->
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
