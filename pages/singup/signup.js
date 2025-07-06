@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(res => res.json())
             .then(res => {
                 if (res.code === 2001) {
-                    window.location.href = 'login.html';
+                    window.location.href = '../login/login.html';
                     return;
                 }
                 errorMessage.textContent = '이미 존재하는 아이디입니다.';
