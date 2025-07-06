@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             alert(res.message);
-            window.location.href = 'index.html';
+            window.location.href = '../../index.html';
         })
 
     if (post) {
@@ -114,6 +114,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     backToListBtn.addEventListener('click', () => {
-        window.location.href = 'index.html';
+        window.location.href = '../../index.html';
     });
 });
