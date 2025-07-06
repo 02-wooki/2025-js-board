@@ -473,7 +473,6 @@ footer {
     padding-bottom: 20px;
 }
 
-/* TODO: 깃허브 페이지 오류 해결되면 둘 중 하나 지우기*/
 footer > a {
     color: #333; /* 기본 검은색 */
     text-decoration: none;
@@ -484,22 +483,6 @@ footer > a {
 }
 
 footer > a:hover {
-    font-weight: bold; /* 마우스 오버 시 굵게 */
-    background: linear-gradient(135deg, #667eea, #764ba2); /* 그라데이션 배경 */
-    -webkit-background-clip: text; /* 텍스트에만 배경 적용 */
-    -webkit-text-fill-color: transparent; /* 텍스트 색상을 투명하게 */
-}
-
-.api-spec-link {
-    color: #333; /* 기본 검은색 */
-    text-decoration: none;
-    font-weight: normal; /* 기본 굵기 */
-    transition: all 0.3s ease; /* 부드러운 전환 효과 */
-    display: inline-block; /* transform 적용을 위해 */
-    padding: 5px 0; /* 텍스트 링크처럼 보이도록 패딩 조절 */
-}
-
-.api-spec-link:hover {
     font-weight: bold; /* 마우스 오버 시 굵게 */
     background: linear-gradient(135deg, #667eea, #764ba2); /* 그라데이션 배경 */
     -webkit-background-clip: text; /* 텍스트에만 배경 적용 */
