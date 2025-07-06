@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 - 게시판</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="board-page">
+    <div id="app">
+        <div id="post-view" class="view active">
+            <div class="post-detail-container">
+                <h2 id="post-detail-title"></h2>
+                <p class="post-meta"><span id="post-detail-author"></span> | <span id="post-detail-date"></span></p>
+                <div id="post-detail-content" class="post-content-body"></div>
+                <div class="button-group">
+                    <button type="button" id="back-to-list-btn" class="btn-secondary">목록으로</button>
+                </div>
+
+                <div class="comments-section">
+                    <h3>댓글</h3>
+                    <ul id="comments-list" class="comments-list"></ul>
+
+                    <div id="comment-form-container" class="comment-form-container">
+                        <form id="comment-form">
+                            <textarea id="comment-content" placeholder="댓글을 입력하세요..." rows="4" required></textarea>
+                            <button type="submit" class="btn-primary">작성</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="post.js" type="module"></script>
+</body>
+</html>
