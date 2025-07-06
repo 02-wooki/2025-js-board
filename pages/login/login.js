@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (username === 'admin' && password === 'admin123') {
             localStorage.setItem('isLoggedIn', 'true');
             localStorage.setItem('username', username);
-            window.location.href = 'index.html';
+            window.location.href = '/index.html';
         }
 
         fetch('http://localhost:8080/auth/login', {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(res => {
                 if (res.code === 2002) {
                     localStorage.setItem('username', username);
-                    window.location.href = 'index.html';
+                    window.location.href = '/index.html';
                     return;
                 }
                 if (res.code === 4011 || res.code === 4041) {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
                 alert(res.message);
-                window.location.href = 'index.html';
+                window.location.href = '/index.html';
             })
 
     });

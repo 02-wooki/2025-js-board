@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pageTitle.innerText = '게시판';
 
             loginLogoutBtn.textContent = '로그인';
-            loginLogoutBtn.href = 'login.html';
+            loginLogoutBtn.href = 'pages/login/login.html';
             signupLink.style.display = 'inline';
             newPostBtn.style.display = 'none'; // 로그인하지 않으면 새 글 작성 버튼 숨김
             withdrawalBtn.style.display = 'none';
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             li.dataset.postId = p.id;
             li.addEventListener('click', () => {
-                window.location.href = `post.html?id=${p.id}`;
+                window.location.href = `pages/post/post.html?id=${p.id}`;
             });
             postList.appendChild(li);
         });
