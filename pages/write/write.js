@@ -23,17 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(res => res.json())
             .then(res => {
                 if (res.code === 2101) {
-                    window.location.href = `post.html?id=${res.data}`;
+                    window.location.href = `../post/post.html?id=${res.data}`;
                     return;
                 }
 
                 alert(res.message);
-                window.location.href = `index.html`;
+                window.location.href = `../../index.html`;
             })
     });
 
     // 취소 버튼 클릭 시
     cancelBtn.addEventListener('click', () => {
-        window.location.href = 'index.html';
+        window.location.href = '../../index.html';
     });
 });
